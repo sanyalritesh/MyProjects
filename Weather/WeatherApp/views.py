@@ -13,7 +13,7 @@ def Weather(request):
     else:
         city = "Chandigarh"
 
-    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=398f6d93c9334c7c703b97978b87ed64'
+    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={"YourAPIKEY"}'
     PARAMS = {'units':'metric'}
 
     data = requests.get(url, PARAMS).json()
